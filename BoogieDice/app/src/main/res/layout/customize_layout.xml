@@ -1,0 +1,263 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.boogiedice.boogiedice.CutomizeFragment">
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="16dp"
+         android:layout_marginLeft="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <!-- rolling color -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:minHeight="28dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rolling Color   "
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"/>
+                <com.rtugeek.android.colorseekbar.ColorSeekBar
+                    android:id="@+id/colorSlider"
+                    android:layout_width="wrap_content"
+                    app:colors="@array/material_colors"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <!-- listening color -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:minHeight="28dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Listening Color"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"/>
+                <com.rtugeek.android.colorseekbar.ColorSeekBar
+                    android:id="@+id/colorSlider"
+                    android:layout_width="wrap_content"
+                    app:colors="@array/material_colors"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <!-- time to sleep -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+                <TextView
+                    android:text="Time To Sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:background="@drawable/edit_text_border"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_marginRight="16dp"
+                    android:text="60"
+                    />
+            </LinearLayout>
+            <!-- Rolling time -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+                <TextView
+                    android:text="Rolling Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:background="@drawable/edit_text_border"
+                    android:layout_marginRight="16dp"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:text="2"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:background="@drawable/edit_text_border"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_marginRight="16dp"
+                    android:text="4"
+                    />
+                </LinearLayout>
+            <!-- sensitivity -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+                <TextView
+                    android:text="Sensitivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:background="@drawable/edit_text_border"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_marginRight="16dp"
+                    android:text="5"
+                    />
+                </LinearLayout>
+            <!-- Rolling strength -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+                <TextView
+                    android:text="Sensitivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:background="@drawable/edit_text_border"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_marginRight="16dp"
+                    android:text="9"
+                    />
+            </LinearLayout>
+            <!-- dice id -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+                <TextView
+                    android:text="Dice ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:background="@drawable/edit_text_border"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_marginRight="16dp"
+                    android:text="1"
+                    />
+            </LinearLayout>
+            <!-- activate on clap -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center">
+                <TextView
+                    android:text="Activate On Clap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:id="@+id/button" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Program"
+                    android:id="@+id/button2"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+        </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>
